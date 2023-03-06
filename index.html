@@ -1,0 +1,264 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css external -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- css internal -->
+    <link rel="shortcut icon" type="image" href="assets/RevoU.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>RevoU Mini Project</title>
+</head>
+
+<body>
+
+    <!-- blurry scroll -->
+
+    <div class="parallax">
+
+    </div>
+
+    <div id="blurry-scroll" aria-hidden="true"></div>
+
+    <!-- navbar -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <img src="assets/RevoU.png" class="logo" alt="logo-revou">
+                <div class="menu">
+                    <a href="#home">Home</a>
+                    <a href="#package">Our Package</a>
+                    <a href="#callus">Call Us</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="parallax1" id="page-top">
+            <div class="home-title">
+                <h1 class="section-title-bold">Your Trusted Travel Agent</h1>
+                <p class="section-description-italic">Your happiness is our happiness</p>
+            </div>
+        </div>
+
+        <section id="home">
+            <div class="container">
+                <div class="section-card">
+                    <div class="home-card">
+                        <div class="home-spinner">
+                            <a href="#"><img src="assets/home-card.jpg" alt="Time to Travel"
+                                    class="home-spinner-img"></a>
+                            <div>
+                                <h5 class="home-spinner-description">"Liburan jadi menyenangkan bersama Travel
+                                    Agentku."</h5>
+                                <div class="home-card-profile">
+                                    <a href="#"><img src="assets/user.jpg" alt="Home Card User"
+                                            class="home-card-img-profile"></a>
+                                    <div class="home-card-profile-description">
+                                        <h6 class="text-title-bold-s">Florence Hughes</h6>
+                                        <i class="text-description-italic">Ibu Rumah Tangga, 28</i>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="line-s">
+                        </div>
+                        <div class="home-contact">
+                            <span class="text-title-bold">Contact Us</span>
+                            <p class="home-contact-description">Sales akan menghubungi Anda 1x24 jam setelah data kami
+                                terima.</p>
+                            <div class="home-contact-form">
+                                <form action="#">
+                                    <div class="control-group">
+                                        <div class="group">
+                                            <div class="form-group">
+                                                <label class="text-title-bold-s">Name:</label>
+                                                <input type="text" required placeholder="First and last name">
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <div class="group">
+                                            <div class="form-group">
+                                                <label class="text-title-bold-s">Email:</label>
+                                                <input type="email" required placeholder="example@email.com">
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <div class="group">
+                                            <div>
+                                                <label class="text-title-bold-s">Message:</label>
+                                                <select name="interest" id="interest">
+                                                    <option value="">Select option</option>
+                                                    <option value="mountain">Mountain</option>
+                                                    <option value="beach">Beach</option>
+                                                </select>
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div id="success"></div>
+                                    <div class="form-group">
+                                        <input type="submit" class="btn btn-primary">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-additional">
+                        <div class="home-additional">
+                            <span class="text-title-bold-s">Use this space to provide users with more information about
+                                your offer. Consider it a follow-up to your headline and explain the benefits of your
+                                service or product</span>
+                            <ul class="features-list">
+                                <li>AngularJS</li>
+                                <li>Yii</li>
+                                <li>Symfony</li>
+                                <li>Ruby on Rails</li>
+                                <li>Laravel</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="parallax2" id="page-middle">
+            <div class="package-title">
+                <h1 class="section-title-bold">Our Package</h1>
+            </div>
+        </div>
+
+        <section id="package">
+            <div class="container">
+                <div class="section-card">
+                    <div class="package-list">
+                        <div class="package-card-list">
+                            <div class="package-card-list-item">
+                                <div class="package-card-list-item-icon">
+                                    <i class="icon-bulb"></i>
+                                </div>
+                                <div class="package-card-list-item-description">
+                                    <p class="text-title-bold-l">Bali</p>
+                                    <p class="text-description-l">Travel dan wisata di Bali kunjungi cagar budaya
+                                        dan kuliner yang menarik</p>
+                                </div>
+                            </div>
+                            <div class="package-card-list-item">
+                                <div class="package-card-list-item-icon">
+                                    <i class="icon-bulb"></i>
+                                </div>
+                                <div class="package-card-list-item-description">
+                                    <p class="text-title-bold-l">Bali</p>
+                                    <p class="text-description-l">Travel dan wisata di Bali kunjungi cagar budaya
+                                        dan kuliner yang menarik</p>
+                                </div>
+                            </div>
+                            <div class="package-card-list-item">
+                                <div class="package-card-list-item-icon">
+                                    <i class="icon-bulb"></i>
+                                </div>
+                                <div class="package-card-list-item-description">
+                                    <p class="text-title-bold-l">Bali</p>
+                                    <p class="text-description-l">Travel dan wisata di Bali kunjungi cagar budaya
+                                        dan kuliner yang menarik</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="line-s">
+                        <div class="package-card-list">
+                            <div class="package-card-list-item">
+                                <div class="package-card-list-item-icon">
+                                    <i class="icon-star"></i>
+                                </div>
+                                <div class="package-card-list-item-description">
+                                    <p class="text-title-bold-l">Bali</p>
+                                    <p class="text-description-l">Travel dan wisata di Bali kunjungi cagar budaya
+                                        dan kuliner yang menarik</p>
+                                </div>
+                            </div>
+                            <div class="package-card-list-item">
+                                <div class="package-card-list-item-icon">
+                                    <i class="icon-star"></i>
+                                </div>
+                                <div class="package-card-list-item-description">
+                                    <p class="text-title-bold-l">Bali</p>
+                                    <p class="text-description-l">Travel dan wisata di Bali kunjungi cagar budaya
+                                        dan kuliner yang menarik</p>
+                                </div>
+                            </div>
+                            <div class="package-card-list-item">
+                                <div class="package-card-list-item-icon">
+                                    <i class="icon-star"></i>
+                                </div>
+                                <div class="package-card-list-item-description">
+                                    <p class="text-title-bold-l">Bali</p>
+                                    <p class="text-description-l">Travel dan wisata di Bali kunjungi cagar budaya
+                                        dan kuliner yang menarik</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="callus">
+            <div class="container">
+                <div class="section-card">
+                    <div class="callus-card">
+                        <h2 class="section-title-bold-s">Your Closing Argument Headline</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores soluta tempora unde
+                            molestias quia dicta neque, ullam vitae asperiores iste esse vero?</p>
+                        <button type="submit" class="btn btn-primary"><span class="text-title-bold-s">CALL TO
+                                ACTION</span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="parallax2" id="page-bottom">
+            <div class="callus-title">
+                <h1 class="section-title-bold-s">TrevolU</h1>
+                <div class="callus-list">
+                    <div class="callus-card-list">
+                        <div class="callus-card-list-item">
+                            <a href=""><p class="text-description-l">Terms of Service</p></a>
+                            <a href=""><p class="text-description-l">Privacy Policy</p></a>
+                        </div>
+                    </div>
+                    <div class="callus-card-list">
+                        <div class="callus-card-list-item">
+                            <a href=""><p class="text-description-l">© 2023</p></a>
+                            <a href=""><p class="text-description-l">TrevolU</p></a>
+                        </div>
+                    </div>
+                    <div class="callus-card-list">
+                        <div class="callus-card-list-item">
+                            <a href="mailto:jamielmuhammadd@gmail.com"><img src="assets/email.png" class="icon-socmed"></a>
+                            <a href="https://www.linkedin.com/in/jamilmuhammad/"><img src="assets/linkedin.png" class="icon-socmed"></a>
+                            <a href="https://github.com/jamilmuhammad"><img src="assets/github.png" class="icon-socmed"></a>
+                            <a href="https://www.instagram.com/jamilmuhammadd/"><img src="assets/instagram.png" class="icon-socmed"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
