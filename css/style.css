@@ -225,6 +225,8 @@ header{
 	justify-content: flex-end;
 	-webkit-backdrop-filter: blur(8px);
 	backdrop-filter: blur(1.5px);
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
 }
 
 .navbar a {
@@ -259,11 +261,115 @@ header{
 	text-align: start;
 }
 
+/* home spinner */
 .home-spinner {
 	margin-right: auto;
 }
 
-/* home spinner */
+/* slider */
+.slider {
+	margin: 0 auto;
+	max-width: 380px;
+	max-height: 180px;
+  }
+  
+.slide_viewer {
+	height: 580px;
+	overflow: hidden;
+	position: relative;
+	z-index: -2;
+}
+
+.slide_group {
+	height: 100%;
+	position: relative;
+	width: 100%;
+	z-index: -2;
+}
+  
+.slide {
+	display: none;
+	height: 100%;
+	width: 100%;
+}
+
+.slide:first-child {
+	display: block;
+}
+
+.slide > .slide_item {
+	width: 100%;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.slide_buttons {
+	left: 0;
+	position: relative;
+	right: 0;
+	top: 330px;
+	text-align: center;
+}
+  
+a.slide_btn {
+	color: #474544;
+	font-size: 42px;
+	margin: 0 0.175em;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+  
+.slide_btn.active, .slide_btn:hover {
+	color: #428CC6;
+	cursor: pointer;
+}
+  
+.directional_nav {
+	height: 320px;
+	margin: 0 auto;
+	max-width: 420px;
+	position: relative;
+	top: -150px;
+	z-index: 0;
+  }
+  
+.previous_btn {
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	position: absolute;
+	top: 0;
+  }
+  
+.next_btn {
+	bottom: 0;
+	margin: auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+  
+.previous_btn, .next_btn {
+	cursor: pointer;
+	height: 65px;
+	opacity: 0.5;
+	z-index: 1;
+	-webkit-transition: opacity 0.4s ease-in-out;
+	-moz-transition: opacity 0.4s ease-in-out;
+	-ms-transition: opacity 0.4s ease-in-out;
+	-o-transition: opacity 0.4s ease-in-out;
+	transition: opacity 0.4s ease-in-out;
+	width: 65px;
+}
+  
+.previous_btn:hover, .next_btn:hover {
+	opacity: 1;
+}
+
 .home-spinner-description {
 	padding: 5%;
 	font-style: italic;
@@ -274,7 +380,37 @@ header{
 	width: 400px;
 	height: 400px;
 	border-radius: 5px;
+	pointer-events: none;
+    transition:0.5s;
 }
+
+/* for image animation */
+/* .slide .slide_item img:hover {
+	transform:scale(1.1);
+}
+
+.slide img.zoomed{
+	width: 500px;
+	height: 600px;
+	position: fixed;
+	left: 25%;
+	top: 0%;
+	z-index: 1000;
+	transform: scale(1) translatey(0) !important; 
+}
+
+.overlay{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,.45);
+	top: 0;
+	display: none;
+}
+
+.overlay.active{
+	display: block;
+} */
 
 /* home profile */
 .home-card-profile {
